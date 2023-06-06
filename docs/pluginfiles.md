@@ -50,7 +50,7 @@ typical files in the plugin, for example, `version.php`, `settings.php`, `lib.ph
 the plugin folder and `access.php`, `services.php`, `upgrade.php`, etc. under the `db` folder.
 
 When you create a new PHP file inside a Moodle plugin, MDLCode will automatically add
-(boilerplate and docblock)[boilerplate.md]. If the file is a 'magic' file where Moodle
+[boilerplate and docblock](boilerplate.md). If the file is a 'magic' file where Moodle
 expects some specific contents, MDLCode will pre-populate the file with the skeleton of
 the required code.
 
