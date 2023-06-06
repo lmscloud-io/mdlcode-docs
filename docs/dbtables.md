@@ -13,6 +13,8 @@ MDLCode will detect the table names in the parameters of the functions such as
 If you hover a table reference you can see the name and the description. Description
 is taken from the table comment in the `db/install.xml` file.
 
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/dbtables/dbtables1.png">
+
 ### Ctrl+Click to go to the db table definition
 
 You can either Ctrl+Click on a table name hightlighted in orange or
