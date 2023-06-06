@@ -7,6 +7,8 @@ entity.
 
 ### Hover to see the string value
 
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/strings/strings1.png">
+
 In some cases you will see more than one string value, for example, when it is a help element
 or the string has conditional concatenation.
 

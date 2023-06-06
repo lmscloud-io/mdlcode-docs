@@ -12,6 +12,7 @@ VSCode extension that helps you with developing of Moodle plugins.
 
 This extension is still in the beta stage, all premium features are free until October 2023.
 
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/strings/strings1.png">
 
 ## Other recommended extensions
 
