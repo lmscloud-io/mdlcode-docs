@@ -44,7 +44,7 @@ and select "Find all references".
 
 In the `db/access.php` file the capabilities that are not used will be reported as problems.
 
-Please note that there can be false positives. You can add [directives.md](directives) to
+Please note that there can be false positives. You can add [directives](directives.md) to
 disable problem reporting or advise Mdlcode about existing references.
 
 ## Renaming capabilities (Premium)

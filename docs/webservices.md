@@ -41,5 +41,5 @@ note that this Code Lens is provided by your PHP extension and not by MDLCode.
 MDLCode will report a problem if a web-service is defined as AJAX web-service but is
 never called from JS files.
 
-Please note that there can be false positives. You can add [directives.md](directives) to
+Please note that there can be false positives. You can add [directives](directives.md) to
 disable problem reporting or advise Mdlcode about existing references.

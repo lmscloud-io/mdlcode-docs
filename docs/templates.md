@@ -32,7 +32,7 @@ In the template file above the `@template` directive in the comment block you wi
 
 If a template is not used anywhere in the code it will be reported as a problem.
 
-Please note that there can be false positives. You can add [directives.md](directives) to
+Please note that there can be false positives. You can add [directives](directives.md) to
 disable problem reporting or advise Mdlcode about existing references.
 
 ## Renaming templates (Premium)

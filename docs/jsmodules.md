@@ -38,7 +38,7 @@ You can either click on theis link or right click on a module name and select "F
 
 If a module is not used anywhere in the code it will be reported as a problem.
 
-Please note that there can be false positives. You can add [directives.md](directives) to
+Please note that there can be false positives. You can add [directives](directives.md) to
 disable problem reporting or advise Mdlcode about existing references.
 
 ## Renaming JS modules (Premium)
