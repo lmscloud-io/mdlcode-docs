@@ -8,7 +8,7 @@ VSCode extension that helps you with developing of Moodle plugins.
 - One-click creation of common files (`classes/*`, `db/*`, `lib.php`, `version.php`, etc.);
 - and many more features.
 
-[Full documentation](https://github.com/lmscloud-io/mdlcode-docs/blob/main/docs/index.md)
+[Full documentation](https://github.com/lmscloud-io/mdlcode-docs/blob/main/docs/README.md)
 
 This extension is still in the beta stage, all premium features are free until October 2023.
 
