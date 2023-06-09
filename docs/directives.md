@@ -1,5 +1,7 @@
 # Directives in MDLCode
 
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/directives/directives_example.gif">
+
 Sometimes MDLCode is unable to parse code and detect references to the entities
 (string identifiers, templates, webservice names, database tables, etc).
 
