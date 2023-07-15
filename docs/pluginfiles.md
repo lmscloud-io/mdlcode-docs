@@ -22,6 +22,8 @@ Inside each plugin you will see the same files and directories structure as in t
 
 You can access this view by clicking on the Moodle icon in the Side Bar.
 
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/views/plugins_view.png">
+
 ### Switching between Explorer and Plugins view
 
 When you are working with the files and folders in the Plugins view you may notice
@@ -42,6 +44,8 @@ you will find there typical subfolders of this folder, for example, `task`, `eve
 `privacy`, `external`, etc.
 
 You can always select "Other..." and type any name of the folder.
+
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/views/new_folder.png">
 
 ### Creating new files in the Plugins view
 

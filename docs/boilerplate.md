@@ -27,3 +27,6 @@ Similar functionality is available for the docblock, however it will only save t
 with `@copyright`, `@author` and `@license`. This functionality can be useful if you may work
 on different plugins and use either your own name or the company name as a main copyright
 depending on the plugin.
+
+If you create a new plugin using the MDLCode wizard,
+you can specify the default boilerplate and docblock for the plugin in the wizard.

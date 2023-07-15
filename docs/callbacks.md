@@ -41,3 +41,15 @@ implemented.
 
 In the `lib.php` file in your plugin start typing "function ..." and you will see
 the autocomplete list of all callbacks that are available for this plugin.
+
+## New callback wizard (Premium)
+
+New callback wizard will help you to choose a callback from the list of all callbacks available for this plugin type, and copy implementation from
+another plugin. MDLCode also provides default implementation for some callbacks.
+
+To open wizard do one of the following:
+- inside `lib.php` file place the mouse cursor on any text and click
+  on the yellow lightbulb that appears on the left side of the editor;
+  select "Add callback" from the menu.
+- click on the "New..." button in the Wizard view in the Moodle plugins
+  view container.

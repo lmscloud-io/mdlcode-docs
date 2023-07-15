@@ -6,8 +6,11 @@ Moodle code contains several types of JavaScript files:
 - YUI modules - legacy framework that is still used in several places
 - Plain JavaScript files such as `module.js` or `block.js`
 
+You can also embed JavaScript code in Mustache templates using `{{#js}}` directive.
+
 VSCode will help you to navigate between ES6 modules and functions. MDLCode will additionally
-help you to navigate between AMD and YUI modules.
+help you to navigate between AMD and YUI modules as well as detect links
+from `*.php` and `*.mustache` files.
 
 ## Create jsconfig.json
 
@@ -48,7 +51,7 @@ This will rename the module, rename the file and change all references to it.
 
 The new name that you specify does not have to be in on the same level. For example, you can rename
 module `tool_plugin/welcome` into `tool_plugin/local/hello` and MDLCode will automatically
-create a folder `amd/src/local` and move the file there.
+create a folder `amd/src/local`, rename the file and move it there.
 
 ## Other features
 
