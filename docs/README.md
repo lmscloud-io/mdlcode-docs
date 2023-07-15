@@ -4,6 +4,7 @@ MDLCode is a Visual Studio Code extension that helps Moodle developers to write 
 
 Find out more how MDLCode helps you to work with:
 - [Plugin list and plugin files](pluginfiles.md)
+- [New plugin wizard](newplugin.md)
 - [Language strings](strings.md)
 - [Database tables](dbtables.md)
 - [Capabilities](capabilities.md)
