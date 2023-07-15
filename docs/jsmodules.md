@@ -25,6 +25,8 @@ from the command palette.
 Whenever you see a module name highlighted in orange (in **php**, **js** or **mustache** files) you can
 Ctrl+Click on it to navigate to the module definition.
 
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/jsmodules/gotodefinition.png">
+
 As mentioned above, VSCode intellisense will also help you to navigate between ES6 functions.
 
 ### Detect references to non-existing modules
@@ -36,6 +38,8 @@ MDLCode will detect it and report as a problem.
 
 In the JS file above the `@module` directive in the docblock you will see Code Lenses "X references".
 You can either click on theis link or right click on a module name and select "Find all references".
+
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/jsmodules/refs.png">
 
 ### Identify unused modules
 
