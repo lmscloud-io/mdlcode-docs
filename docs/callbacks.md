@@ -26,6 +26,8 @@ The actual presense of this Code Lens will inform you that this function is a ca
 implementation and clicking on this link will take you to all places in core where this
 callback may be called. From there you can figure out **which parameters are expected**.
 
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/callbacks/callback_with_arrow.png">
+
 Intellisense extensions such as "PHP" (Devsense) or "PHP Intelephense" may report these
 functions as having "0 references" because they are not called directly from the code.
 
@@ -37,10 +39,14 @@ When you navigate to the place where callback is called from you will see a Code
 Clicking on this link will take you to all places in the code where this callback is
 implemented.
 
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/callbacks/invokation_with_arrow.png">
+
 ## Callback autocomplete (Premium)
 
 In the `lib.php` file in your plugin start typing "function ..." and you will see
 the autocomplete list of all callbacks that are available for this plugin.
+
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/callbacks/autocomplete.png">
 
 ## New callback wizard (Premium)
 
@@ -53,3 +59,5 @@ To open wizard do one of the following:
   select "Add callback" from the menu.
 - click on the "New..." button in the Wizard view in the Moodle plugins
   view container.
+
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/callbacks/add.png">
