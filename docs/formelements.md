@@ -20,6 +20,8 @@ right click and select "Go to definition" from the context menu.
 This will take you to the class responsible for this form element. In this class you
 can find the constructor and see what parameters it accepts.
 
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/formelements/gotodefinition.png">
+
 ### Detect references to non-existing form elements
 
 If you made a mistake in the form element name, MDLCode will detect it and report as a problem.
@@ -35,4 +37,6 @@ MoodleQuickForm::registerElementType('submit', "$CFG->libdir/form/submit.php", '
 Above this line you will see the Code Lenses with the list of references to this form element
 from code and from unittests.
 
-For all core form elements you can find these references in the enf of the file `lib/formslib.php`.
+For all core form elements you can find these references in the end of the file `lib/formslib.php`.
+
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/formelements/references.png">
