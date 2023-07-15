@@ -23,6 +23,8 @@ right click and select "Go to definition" from the context menu.
 This will take you to the `db/install.xml` file in the respective plugin where the db table
 is defined.
 
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/dbtables/gotodefinition.png">
+
 ### Detect references to non-existing tables
 
 If you made a mistake in the DB table name, MDLCode will detect it and report as a problem.
@@ -32,6 +34,8 @@ If you made a mistake in the DB table name, MDLCode will detect it and report as
 In the `db/install.xml` above the table name you will see Code Lenses "X code references" and
 "Y test references". You can either click on these links or right click on a table name
 and select "Find all references".
+
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/dbtables/references.png">
 
 ### Identify unused DB tables
 

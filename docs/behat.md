@@ -15,6 +15,8 @@ space and any text, you will see a list of available steps that match the text y
 In feature files click anywhere in the step while holding the control key (or right click and
 select "Go to definition").
 
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/behat/gotodefinition_feature.png">
+
 In behat php files you will see that the first parameter for the "execute()" function is
 highlighted with orange. Click on it while holding the control key (or right click and
 select "Go to definition").
