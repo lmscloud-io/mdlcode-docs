@@ -15,11 +15,15 @@ When you create a new php or js file in the plugin, MDLCode will automatically a
 with the copyright. It will use current year and the name that you set in the extension setting
 `mdlcode.copyright`.
 
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/boilerplate/setting_copyright.png">
+
 ## Modifying boilerplate and docblock (Premium)
 
 With MDLCode you can save the default boilerplate for each plugin. To do it, place a cursor anywhere
 in the boilerlate and click on the yellow lightbulb that appears on the left.
 Select "Save as default boilerplate for plugin ..."
+
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/boilerplate/save_bp.png">
 
 Now, when you create a new file in this plugin, MDLCode will use the boilerplate you saved.
 
