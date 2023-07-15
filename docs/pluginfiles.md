@@ -53,6 +53,8 @@ Similarly to the "New folder" sub-menu, the "New file" sub-menu will suggest you
 typical files in the plugin, for example, `version.php`, `settings.php`, `lib.php`, etc under
 the plugin folder and `access.php`, `services.php`, `upgrade.php`, etc. under the `db` folder.
 
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/views/new_file.png">
+
 When you create a new PHP file inside a Moodle plugin, MDLCode will automatically add
 [boilerplate and docblock](boilerplate.md). If the file is a 'magic' file where Moodle
 expects some specific contents, MDLCode will pre-populate the file with the skeleton of
