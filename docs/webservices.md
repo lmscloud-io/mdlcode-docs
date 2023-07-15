@@ -20,10 +20,10 @@ is defined.
 When in the `db/services.php` file you can see "Go to implementation" Code Lens above the
 web service name. Click on it to go to the implementation of the web service.
 
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/webservices/definition.png">
+
 As you know in order to implement a web service you need to implement three functions.
 The Code Lenses will allow you to quickly navigate between them.
-
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/webservices/definition.png">
 
 Next to the implementation function you can see "WS definition", "WS parameters" and
 "WS returns" Code Lenses. Click on them to go to the definition or respective methods.
