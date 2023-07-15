@@ -15,6 +15,8 @@ other mustache templates.
 You can either Ctrl+Click on a templates name hightlighted in orange or
 right click and select "Go to definition" from the context menu.
 
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/templates/gotodefinition.png">
+
 This will take you to the `templates/NAME.mustache` file in the respective plugin where the template
 is defined.
 
@@ -25,8 +27,10 @@ If you made a mistake in the template name, MDLCode will detect it and report as
 ## Lookup references (Premium)
 
 In the template file above the `@template` directive in the comment block you will see Code Lenses
-"X references". You can either click on theis link or right click on a template name and select
+"X references". You can either click on this link or right click on a template name and select
 "Find all references".
+
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/templates/references.png">
 
 ### Identify unused templates
 
@@ -55,3 +59,5 @@ match the file name.
 If the template name is missing, or the comment is missing, or the template name is incorrect
 it will be reported as a problem. Place a cursor on the problem and a yellow lightbulb will
 appear. Click on it and select appropriate command to fix the problem.
+
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/templates/namefix.png">
