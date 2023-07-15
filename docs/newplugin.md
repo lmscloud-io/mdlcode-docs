@@ -1,7 +1,7 @@
 # Creating new plugin in MDLCode
 
-You can open the "New plugin" wizard:
-- right click on the plugin type in the Plugins view and select "New plugin"
+To open the "New plugin" wizard:
+- right click on the plugin type in the Plugins view and select "New plugin", or
 - click on "New..." button in the Wizard view in the Moodle view container
 
 <img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/newplugin/new.png">

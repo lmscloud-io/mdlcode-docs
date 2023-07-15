@@ -8,9 +8,9 @@ VSCode extension that helps you with developing of Moodle plugins.
 - One-click creation of common files (`classes/*`, `db/*`, `lib.php`, `version.php`, etc.);
 - and many more features.
 
-[Full documentation](https://github.com/lmscloud-io/mdlcode-docs/blob/main/docs/README.md)
+**This extension is still under development, all premium features are free until October 2023.**
 
-This extension is still in the beta stage, all premium features are free until October 2023.
+[Full documentation](https://github.com/lmscloud-io/mdlcode-docs/blob/main/docs/README.md)
 
 <img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/strings/strings2.png">
 
@@ -18,7 +18,7 @@ This extension is still in the beta stage, all premium features are free until O
 
 MDLCode extension can parse PHP and JS files but it does not provide features of a language server.
 
-In order to work with Moodle code you also need to install a PHP IntelliSense extension for VSCode,
+In order to work with Moodle code you also need to install a **PHP IntelliSense** extension for VSCode,
 for example [PHP Devsense](https://marketplace.visualstudio.com/items?itemName=DEVSENSE.phptools-vscode)
 or [PHP Intelephense](https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client).
 
