@@ -14,6 +14,8 @@ If you hover a capability reference you can see the name and the description.
 You can either Ctrl+Click on a capability name hightlighted in orange or
 right click and select "Go to definition" from the context menu.
 
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/capabilities/gotodefinition.png">
+
 This will take you to the `db/access.php` file in the respective plugin where the capability
 is defined.
 
@@ -25,6 +27,8 @@ If you made a mistake in the capabilitiy identifier, MDLCode will detect it and 
 
 In the `db/access.php` above the capability name you will see a Code Lens "Language string (en)".
 Follow it to go to the `lang/en/` file and the string for this capability.
+
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/capabilities/langstring.png">
 
 ### Detect missing strings
 
@@ -52,3 +56,11 @@ disable problem reporting or advise Mdlcode about existing references.
 Right-click on a capability name in the `db/access.php` file and select "Rename symbol".
 This will rename the capability and all references to it, it will also rename the
 language string with the capability name.
+
+## New capability wizard (Premium)
+
+Place cursor on any text in the `db/access.php` file and click on the yellow lightbulb. Select "Add capability".
+
+You can also access it from the "Wizard" view by clicking the "New..." button.
+
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/capabilities/wizard.png">
