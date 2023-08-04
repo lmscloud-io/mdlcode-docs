@@ -18,5 +18,6 @@ Find out more how MDLCode helps you to work with:
 Other topics:
 - [Directives](directives.md)
 - [Boilerplate and docblock](boilerplate.md)
+- [Recommendations on setting up VSCode](setup.md)
 
 **This extension is still under development, all premium features are free until October 2023.**

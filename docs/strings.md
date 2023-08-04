@@ -77,6 +77,6 @@ Right-click on a string identifier in the language file and select "Rename symbo
 This will rename the string and all references to it.
 
 Sometimes not all references can be renamed automatically, for example, when the string identifier
-in a reference was created dynamically, or when string reference comes from a (directive)[directives.md].
+in a reference was created dynamically, or when string reference comes from a [directive](directives.md).
 In this case a popup will appear notifying you that some references could not be changed.
 changed automatically
