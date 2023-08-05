@@ -14,10 +14,11 @@ Find out more how MDLCode helps you to work with:
 - [Form elements](formelements.md)
 - [Web services](webservices.md)
 - [Behat steps](behat.md)
+- [Running CLI scripts](runcli.md)
 
 Other topics:
 - [Directives](directives.md)
 - [Boilerplate and docblock](boilerplate.md)
 - [Recommendations on setting up VSCode](setup.md)
 
-**This extension is still under development, all premium features are free until October 2023.**
+**This extension is still under development, all premium features are free until November 2023.**

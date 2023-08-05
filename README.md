@@ -10,7 +10,7 @@ VSCode extension that helps you with developing of Moodle plugins.
 - Autocomplete for callbacks and behat steps;
 - Miscellaneous problem diagnostics and quick fixes.
 
-**This extension is still under development, all premium features are free until October 2023.**
+**This extension is still under development, all premium features are free until November 2023.**
 
 [Full documentation](https://github.com/lmscloud-io/mdlcode-docs/blob/main/docs/README.md)
 
