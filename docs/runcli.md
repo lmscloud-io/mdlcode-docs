@@ -35,6 +35,13 @@ You can also run any scripts through this wizard. For this do not enter anything
 field, select "Custom..." parameters and enter the command you want to run in the "Custom parameters" field.
 For example, you can run `grunt` this way.
 
+## Code integration
+
+Next to the scheduled tasks definitions you can notice an "Execute task" code action. This is a shortcut
+to running a CLI script `php admin/cli/scheduled_task.php --execute=CLASSNAME`.
+
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/runcli/executetask.png">
+
 ## Saving favourite CLI scripts (Premium)
 
 You can save frequently used scripts to the favourites list. Favourite commands appear in the menu on the
