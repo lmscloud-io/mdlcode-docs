@@ -49,3 +49,7 @@ never called from JS files.
 
 Please note that there can be false positives. You can add [directives](directives.md) to
 disable problem reporting or advise Mdlcode about existing references.
+
+## Execute web services (Premium)
+
+See [Executing Web services](executews.md)

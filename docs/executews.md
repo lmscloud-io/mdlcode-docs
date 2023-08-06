@@ -1,4 +1,4 @@
-# Execute WebServices in MDLCode
+# Executing Web Services in MDLCode
 
 * Open MDLCode Wizard and click "Execute WebService", or
 * Click on "Execute WS" next to the service definition or implementation
@@ -16,7 +16,7 @@ username/password authentication.
 
 <a href="https://docs.moodle.org/402/en/Using_web_services" target="_blank">Detailed documentation on moodle.org</a>
 
-## Executing WebServices (Premium)
+## Executing Web Services (Premium)
 
 MDLCode can help you to prepare a command for executing a WebService and run it in the terminal.
 
