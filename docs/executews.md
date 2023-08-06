@@ -8,7 +8,7 @@
 ## Setting up WebServices
 
 Before you can execute a WebService, you need to set up the environment. You need to enable
-WebServices in your Moodle site and create a token for the user you want to use to execute.
+WebServices in your Moodle site and create a token for the user.
 You need to create a service and add functions to it.
 
 You need to enable **REST protocol** for token authentication or **webservice authentication method** for

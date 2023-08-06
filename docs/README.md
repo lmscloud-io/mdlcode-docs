@@ -15,7 +15,7 @@ Find out more how MDLCode helps you to work with:
 - [Web services](webservices.md)
 - [Behat steps](behat.md)
 - [Running CLI scripts](runcli.md)
-- [Executing WebServices](execwebservice.md)
+- [Executing WebServices](executews.md)
 
 Other topics:
 - [Directives](directives.md)
