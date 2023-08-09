@@ -1,63 +1,51 @@
-# Working with mustache templates in MDLCode
+# Streamlining Mustache Templates with MDLCode
 
 MDLCode makes it easier for you to work with mustache templates.
 
-## Lookup templates
+## Exploring Templates
 
-When you see an identifier highlighted in orange it means that MDLCode detected a Moodle
-entity.
+An orange-highlighted identifier signifies MDLCode's recognition of a Moodle entity.
 
-### Ctrl+Click to go to the templates
+### Navigating to Templates
 
-Mustache templates can be referenced from php files, from javascript files and from
-other mustache templates.
+Mustache templates can be referenced from php files, javascript files, and other mustache templates.
 
-You can either Ctrl+Click on a templates name hightlighted in orange or
-right click and select "Go to definition" from the context menu.
+You can Ctrl+Click on an orange-highlighted template name or right-click and select "Go to definition" from the context menu.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/templates/gotodefinition.png">
+![Navigate](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/templates/gotodefinition.png)
 
-This will take you to the `templates/NAME.mustache` file in the respective plugin where the template
-is defined.
+This action directs you to the `templates/NAME.mustache` file within the respective plugin where the template is defined.
 
-### Detect references to non-existing templates
+### Detecting Non-Existing Template References
 
-If you made a mistake in the template name, MDLCode will detect it and report as a problem.
+If you make an error in the template name, MDLCode promptly identifies it and marks it as a problem.
 
-## Lookup references (Premium)
+## Exploring References (Premium)
 
-In the template file above the `@template` directive in the comment block you will see Code Lenses
-"X references". You can either click on this link or right click on a template name and select
-"Find all references".
+Within the template file, right above the `@template` directive in the comment block, you'll notice Code Lenses labeled "X references." You can either click this link or right-click on a template name and choose "Find all references."
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/templates/references.png">
+![References](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/templates/references.png)
 
-### Identify unused templates
+### Identifying Unused Templates
 
-If a template is not used anywhere in the code it will be reported as a problem.
+Unused templates within the code are highlighted as problems. However, remember that there might be instances of false positives. To address this, you can include [directives](directives.md) to adjust problem reporting or inform MDLCode about existing references.
 
-Please note that there can be false positives. You can add [directives](directives.md) to
-disable problem reporting or advise Mdlcode about existing references.
+## Renaming Templates (Premium)
 
-## Renaming templates (Premium)
+Right-click a template name after the `@template` directive and select "Rename symbol." This action not only modifies the template name but also adjusts the filename and effectively updates all references to it.
 
-Right-click on a template name after the `@template` directive and select "Rename symbol".
-This will rename the template, rename the file and change all references to it.
+Furthermore, the new name doesn't necessarily need to reside at the same level. For instance, renaming `tool_plugin/welcome` to `tool_plugin/local/hello` will prompt MDLCode to generate a `templates/local` folder and move the template there.
 
-The new name that you specify does not have to be in on the same level. For example, you can rename
-template `tool_plugin/welcome` into `tool_plugin/local/hello` and MDLCode will automatically
-create a folder `templates/local` and move the template there.
+## Additional Features
 
-## Other features
+### Correcting Template Names
 
-### Fix template name
+As per Moodle's coding standards, every template file should include a comment with a `@template` tag. MDLCode automatically identifies the template name within this comment. If it doesn't match the file name, MDLCode suggests a **quick fix**.
 
-Moodle coding standards recommend that each template file has a comment with a `@template` tag. MDLCode
-will detect the template name there and will suggest to fix the it if it does not
-match the file name.
+If the template name is missing, the comment is absent, or the template name is incorrect, a problem is highlighted. To address it, position your cursor on the issue. A yellow lightbulb will appear. Click on it and choose the appropriate command to fix the problem.
 
-If the template name is missing, or the comment is missing, or the template name is incorrect
-it will be reported as a problem. Place a cursor on the problem and a yellow lightbulb will
-appear. Click on it and select appropriate command to fix the problem.
+![Name Fix](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/templates/namefix.png)
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/templates/namefix.png">
+---
+
+To explore other MDLCode features, refer to the [main documentation page](README.md).

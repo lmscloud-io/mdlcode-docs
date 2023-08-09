@@ -1,71 +1,64 @@
-# Working with plugins in MDLCode
+# Exploring Plugins with MDLCode
 
-Moodle core has over 40 plugin types, for example `mod`, `block`, `tool`, `auth`, `enrol`,
-`theme`, `local`, etc.
+Within Moodle™'s core, there are more than 40 plugin types such as `mod`, `block`, `tool`, `auth`, `enrol`,
+`theme`, and `local`.
 
-Some of the plugins define subplugin types, for example, `assignsubmission`, `assignfeedback`,
-`logstore`, `quiz`, `tiny`, `atto` etc.
+Some of these plugins define subplugin types like `assignsubmission`, `assignfeedback`,
+`logstore`, `quiz`, `tiny`, `atto`, and more.
 
-Each plugin type has its own folder in the Moodle codebase and these folders can be located
-on different levels of the folder hierarchy.
+Each plugin type has its designated folder within the Moodle codebase, and these folders are organized at various levels in the directory structure.
 
-## Plugins view
+## The Plugins View
 
-MDLCode introduces a "Moodle plugins" view that allows you to browse all plugins
-in your Moodle codebase and can display all plugin types on the same level.
+MDLCode introduces a "Moodle plugins" view that simplifies browsing through all the plugins
+in your Moodle codebase. This view can display all plugin types at the same hierarchy level.
 
-"Plugins" view allows you to switch between different view types:
-- Group plugins by type / Show flat plugins list
+The "Plugins" view offers the flexibility to switch between different display options:
+- Group plugins by type / Show a flat list of plugins
 - Show all plugins / Show only add-ons
 
-Inside each plugin you will see the same files and directories structure as in the Explorer.
+Inside each plugin, you'll find a file and directory structure identical to what's in the Explorer.
 
 You can access this view by clicking on the Moodle icon in the Side Bar.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/views/plugins_view.png">
+![Plugins View](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/views/plugins_view.png)
 
-### Switching between Explorer and Plugins view
+### Switching between Explorer and Plugins View
 
-When you are working with the files and folders in the Plugins view you may notice
-that the context menu items are different from the ones in the Explorer.
+While working within the Plugins view, you'll notice that the context menu items differ from those in the Explorer.
 
-You can switch between the Explorer and Plugins view by selecting "Reveal in Explorer View"
-and "Reveal in Moodle Plugins View" in the files context menu.
+You can easily toggle between the Explorer and Plugins view by choosing "Reveal in Explorer View"
+and "Reveal in Moodle Plugins View" from the file's context menu.
 
-### Creating new folders in the Plugins view
+### Creating New Folders in the Plugins View
 
-When you are in the Plugins view and right click on the plugin name you will see that
-"New folder" in the context menu is a sub-menu. Here you will find the suggestions for the
-typical folders that can be created in the plugin, for example `amd`, `classes`, `db`, `lang`,
-`templates`, etc.
+Within the Plugins view, right-clicking on a plugin name reveals a "New Folder" sub-menu. This sub-menu provides suggestions for common folders typically found within a plugin, like `amd`, `classes`, `db`, `lang`,
+`templates`, and more.
 
-When you right click on the `classes` folder for example and open "New folder" sub-menu
-you will find there typical subfolders of this folder, for example, `task`, `event`, `form`,
-`privacy`, `external`, etc.
+For instance, if you right-click on the `classes` folder and open the "New Folder" sub-menu,
+you'll find suggested subfolders like `task`, `event`, `form`,
+`privacy`, `external`, and more.
 
-You can always select "Other..." and type any name of the folder.
+You can also select "Other..." to input a custom folder name.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/views/new_folder.png">
+![Creating New Folders](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/views/new_folder.png)
 
-### Creating new files in the Plugins view
+### Creating New Files in the Plugins View
 
-Similarly to the "New folder" sub-menu, the "New file" sub-menu will suggest you to create
-typical files in the plugin, for example, `version.php`, `settings.php`, `lib.php`, etc under
-the plugin folder and `access.php`, `services.php`, `upgrade.php`, etc. under the `db` folder.
+Similar to the "New Folder" sub-menu, the "New File" sub-menu offers suggestions for creating
+common files within a plugin, such as `version.php`, `settings.php`, `lib.php`, etc., within
+the plugin folder, and `access.php`, `services.php`, `upgrade.php`, etc., within the `db` folder.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/views/new_file.png">
+![Creating New Files](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/views/new_file.png)
 
-When you create a new PHP file inside a Moodle plugin, MDLCode will automatically add
-[boilerplate and docblock](boilerplate.md). If the file is a 'magic' file where Moodle
-expects some specific contents, MDLCode will pre-populate the file with the skeleton of
-the required code.
+When you create a new PHP file within a Moodle plugin, MDLCode will automatically include the necessary [boilerplate and docblock](boilerplate.md). For files considered 'magic' where Moodle™ expects specific content, MDLCode will pre-fill the file with the required code structure.
 
-If you create a new JavaScript file in the `amd/src` folder, MDLCode will also automatically add
-boilerplate and docblock with the module name.
+Creating a new JavaScript file in the `amd/src` folder will also result in MDLCode adding relevant boilerplate and docblock information.
 
-If you create a new *.mustache file in the `templates` folder, MDLCode will automatically add
-comments and template name.
+When you create a new *.mustache file within the `templates` folder, MDLCode will insert comments and the template name.
 
-Initial contents will be added even if you create a new file in the Explorer view. However, if
-you create a new file outside of VSCode (for example, using a command line or a file manager),
-the file will remain empty.
+This initial content insertion even applies when creating a new file using the Explorer view. However, if you generate a new file outside of VSCode (e.g., through a command line or file manager), the file will remain empty.
+
+---
+
+To explore other MDLCode features, refer to the [main documentation page](README.md).

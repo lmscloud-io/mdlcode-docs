@@ -1,25 +1,23 @@
-# Creating new plugin in MDLCode
+# Creating New Moodle™ Plugins with MDLCode
 
-To open the "New plugin" wizard:
-- right click on the plugin type in the Plugins view and select "New plugin", or
-- click on "New..." button in the Wizard view in the Moodle view container
+To access the "New plugin" wizard:
+- Right-click on the desired plugin type within the Plugins view and choose "New plugin", or
+- Click on the "New..." button in the Wizard view within the Moodle view container.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/newplugin/new.png">
+![Opening the Wizard](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/newplugin/new.png)
 
-You will be taken to the "New plugin" wizard where you can select plugin
-type, name and display name.
+This action will lead you to the "New plugin" wizard, where you can specify the plugin's
+type, name, and display name.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/newplugin/wizard.png">
+![New Plugin Wizard](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/newplugin/wizard.png)
 
-For the most popular plugin types MDLCode will also create all required
-files, capabilities and strings.
+For the most frequently used plugin types, MDLCode will automatically generate all necessary
+files, capabilities, and strings.
 
-For the other plugin types MDLCode will only create `version.php`
-and the language file. Also, if you are not using Premium version,
-only these two files will be created for any plugin type.
+For less common plugin types, MDLCode will create only the `version.php` file and the language file. If you're not using the **Premium version of MDLCode**, these two files will be the only ones generated for any plugin type.
 
-There are usually no options when creating a new plugin, instead MDLCode
-provides autocomplete suggestions, other Wizard options, populates default content
-when creating new files, and so on.
+When creating a new plugin, you typically won't see any settings. Instead, MDLCode offers autocomplete suggestions, additional Wizard choices, and fills in default content when you create new files.
 
-Check out the [main documentation page](README.md) for other MDLCode functionality.
+---
+
+To explore other MDLCode features, refer to the [main documentation page](README.md).

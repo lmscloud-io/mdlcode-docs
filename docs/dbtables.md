@@ -1,59 +1,52 @@
-# Working with DB tables in MDLCode
+# Working with DB Tables with MDLCode
 
-## Lookup tables
+## Lookup Table Names
 
-When you see an identifier highlighted in orange it means that MDLCode detected a Moodle
-entity.
+An orange-highlighted identifier indicates that MDLCode has identified a Moodle entity.
 
-MDLCode will detect the table names in the parameters of the functions such as
-`$DB->get_records()`, `$DB->insert()` and also in curly brackets in the SQL queries.
+MDLCode recognizes table names within function parameters like `$DB->get_records()` and `$DB->insert()`, as well as within curly brackets in SQL queries.
 
-### Hover to see the table description
+### Hover for Table Description
 
-If you hover a table reference you can see the name and the description. Description
-is taken from the table comment in the `db/install.xml` file.
+Hovering over a table reference displays its name and description. The description is extracted from the table comment in the `db/install.xml` file.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/dbtables/dbtables1.png">
+![Table Description](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/dbtables/dbtables1.png)
 
-### Ctrl+Click to go to the db table definition
+### Go to DB Table Definition
 
-You can either Ctrl+Click on a table name hightlighted in orange or
-right click and select "Go to definition" from the context menu.
+Ctrl+Click on an orange-highlighted table name or right-click and select "Go to definition" from the context menu.
 
-This will take you to the `db/install.xml` file in the respective plugin where the db table
-is defined.
+This action leads you to the `db/install.xml` file in the relevant plugin where the DB table is defined.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/dbtables/gotodefinition.png">
+![Go to Definition](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/dbtables/gotodefinition.png)
 
-### Detect references to non-existing tables
+### Detecting Non-Existing Table References
 
-If you made a mistake in the DB table name, MDLCode will detect it and report as a problem.
+MDLCode identifies errors in DB table names and flags them as problems.
 
-## Lookup references (Premium)
+## Exploring References (Premium)
 
-In the `db/install.xml` above the table name you will see Code Lenses "X code references" and
-"Y test references". You can either click on these links or right click on a table name
-and select "Find all references".
+In the `db/install.xml` file, above the table name, you'll encounter Code Lenses for "X code references" and
+"Y test references." Click these links or right-click on a table name, then select "Find all references."
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/dbtables/references.png">
+![References](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/dbtables/references.png)
 
-### Identify unused DB tables
+### Identifying Unused DB Tables
 
-In the `db/install.xml` file the table names that are not used will be reported as problems.
+In the `db/install.xml` file, unused table names are reported as problems. Keep in mind that there may be false positives. You can use [directives](directives.md) to adjust problem reporting or inform MDLCode about existing references.
 
-Please note that there can be false positives. You can add [directives](directives.md) to
-disable problem reporting or advise Mdlcode about existing references.
+## Renaming DB Tables (Premium)
 
-## Renaming DB tables (Premium)
+Right-click a table name in the `db/install.xml` file and choose "Rename symbol." This updates the database table name and modifies all references to it.
 
-Right-click on a table name in the `db/install.xml` file and select "Rename symbol".
-This will rename the database table and change all references to it.
+Note that this action doesn't create an upgrade script for the renaming process; you'll need to do that separately using the XMLDB editor.
 
-Note that this will not create an upgrade script for the rename, you have to do it separately
-using XMLDB editor.
+## Additional Features
 
-## Other features
+### Detecting Duplicate Table Names
 
-### Detect duplicate table names
+MDLCode identifies duplicate table names in the `db/install.xml` files and highlights them as problems.
 
-MDLCode will detect duplicate table names in the `db/install.xml` files and highlight them as problems.
+---
+
+To explore other MDLCode features, refer to the [main documentation page](README.md).

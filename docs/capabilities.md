@@ -1,66 +1,60 @@
-# Working with capabilities in MDLCode
+# Navigating Capabilities with MDLCode
 
-## Lookup capabilities
+## Lookup Capability Names
 
-When you see an identifier highlighted in orange it means that MDLCode detected a Moodle
-entity.
+An orange-highlighted identifier signifies MDLCode's recognition of a Moodle entity.
 
-### Hover to see the capability description
+### Hover for Capability Description
 
-If you hover a capability reference you can see the name and the description.
+Hovering over a capability reference reveals its name and description.
 
-### Ctrl+Click to go to the capability definition
+### Jump to Capability Definition
 
-You can either Ctrl+Click on a capability name hightlighted in orange or
-right click and select "Go to definition" from the context menu.
+Ctrl+Click on an orange-highlighted capability name or right-click and select "Go to definition" from the context menu.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/capabilities/gotodefinition.png">
+![Go to Definition](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/capabilities/gotodefinition.png)
 
-This will take you to the `db/access.php` file in the respective plugin where the capability
-is defined.
+This action directs you to the `db/access.php` file within the relevant plugin, where the capability is defined.
 
-### Detect references to non-existing capabilities
+### Detecting Non-Existing Capability References
 
-If you made a mistake in the capabilitiy identifier, MDLCode will detect it and report as a problem.
+MDLCode identifies errors in capability identifiers and highlights them as problems.
 
-## Language strings
+## Language Strings
 
-In the `db/access.php` above the capability name you will see a Code Lens "Language string (en)".
-Follow it to go to the `lang/en/` file and the string for this capability.
+Above the capability name in the `db/access.php` file, you'll find a Code Lens "Language string (en)." Clicking it takes you to the corresponding string in the `lang/en/` file.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/capabilities/langstring.png">
+![Language String](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/capabilities/langstring.png)
 
-### Detect missing strings
+### Detecting Missing Strings
 
-Capability name in the `db/access.php` file without a corresponding string will be reported as a problem.
+Capability names without corresponding strings in the `db/access.php` file are flagged as problems.
 
-### Create missing strings (Premium)
+### Generating Missing Strings (Premium)
 
-Click on a yellow lightbulb nex to the problem and select "Create string"
+Click on a yellow lightbulb next to the problem and select "Create string."
 
-## Lookup references (Premium)
+## Exploring References (Premium)
 
-In the `db/access.php` above the capability name you will see Code Lenses "X code references" and
-"Y test references". You can either click on these links or right click on a capability name
-and select "Find all references".
+Above the capability name in the `db/access.php` file, you'll encounter Code Lenses for "X code references" and
+"Y test references." Click these links or right-click on a capability name, then choose "Find all references."
 
-### Identify unused capabilities
+### Identifying Unused Capabilities
 
-In the `db/access.php` file the capabilities that are not used will be reported as problems.
+Unused capabilities within the `db/access.php` file are reported as problems. Keep in mind that there might be false positives. You can use [directives](directives.md) to modify problem reporting or inform MDLCode about existing references.
 
-Please note that there can be false positives. You can add [directives](directives.md) to
-disable problem reporting or advise Mdlcode about existing references.
+## Renaming Capabilities (Premium)
 
-## Renaming capabilities (Premium)
+Right-click a capability name in the `db/access.php` file and select "Rename symbol." This action not only renames the capability itself but also updates all references to it, including the associated language string.
 
-Right-click on a capability name in the `db/access.php` file and select "Rename symbol".
-This will rename the capability and all references to it, it will also rename the
-language string with the capability name.
+## New Capability Wizard (Premium)
 
-## New capability wizard (Premium)
+Place your cursor on any text within the `db/access.php` file and click the yellow lightbulb. Select "Add capability."
 
-Place cursor on any text in the `db/access.php` file and click on the yellow lightbulb. Select "Add capability".
+You can also access this feature from the "Wizard" view by clicking the "New..." button.
 
-You can also access it from the "Wizard" view by clicking the "New..." button.
+![New Capability Wizard](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/capabilities/wizard.png)
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/capabilities/wizard.png">
+---
+
+To explore other MDLCode features, refer to the [main documentation page](README.md).

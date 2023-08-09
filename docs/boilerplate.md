@@ -1,36 +1,31 @@
-# Working with boilerplate and docblock in MDLCode
+# Working with Boilerplates and Docblocks in MDLCode
 
-Moodle expects that each php, js and mustache file has a standard boilerplate on the top of the
-file and a comment block. For php files it expects `@package`, `@copyright` and `@license` tags
-in the comment block. For js files it expects `@module`, `@copyright` and `@license`,
-for template files it is only `@template` tag.
+In Moodle™, it's expected that every PHP, JavaScript, and Mustache file starts with a standard boilerplate and includes a comment block. Here's what's expected for each file type:
 
-Moodle codechecker tool will verify that the boilerplate contains specific lines but you
-can modify the first line to include the name of your plugin, for example, and add more lines
-in the bottom.
+- For PHP files: `@package`, `@copyright`, and `@license` tags in the comment block.
+- For JavaScript files: `@module`, `@copyright`, and `@license` tags.
+- For Mustache files: Only a `@template` tag.
 
-## Setting default copyright
+Moodle™'s codechecker tool checks that the boilerplate includes specific lines. However, you can modify the first line to include your plugin's name and add more lines at the bottom.
 
-When you create a new php or js file in the plugin, MDLCode will automatically add a docblock
-with the copyright. It will use current year and the name that you set in the extension setting
-`mdlcode.copyright`.
+## Setting Default Copyright
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/boilerplate/setting_copyright.png">
+When you create a new PHP or JavaScript file in your plugin, MDLCode will automatically add a docblock with the copyright information. It uses the current year and the name you've set in the extension setting `mdlcode.copyright`.
 
-## Modifying boilerplate and docblock (Premium)
+![Setting Copyright](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/boilerplate/setting_copyright.png)
 
-With MDLCode you can save the default boilerplate for each plugin. To do it, place a cursor anywhere
-in the boilerlate and click on the yellow lightbulb that appears on the left.
-Select "Save as default boilerplate for plugin ..."
+## Modifying Boilerplate and Docblock (Premium)
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/boilerplate/save_bp.png">
+MDLCode allows you to save the default boilerplate for each plugin. To do this, place your cursor anywhere in the boilerplate and click the yellow lightbulb that appears on the left. Then, select "Save as default boilerplate for plugin..."
 
-Now, when you create a new file in this plugin, MDLCode will use the boilerplate you saved.
+![Save Boilerplate](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/boilerplate/save_bp.png)
 
-Similar functionality is available for the docblock, however it will only save the lines that start
-with `@copyright`, `@author` and `@license`. This functionality can be useful if you may work
-on different plugins and use either your own name or the company name as a main copyright
-depending on the plugin.
+Now, when you create a new file in that plugin, MDLCode will use the saved boilerplate.
 
-If you create a new plugin using the MDLCode wizard,
-you can specify the default boilerplate and docblock for the plugin in the wizard.
+A similar feature is available for the docblock. It saves lines starting with `@copyright`, `@author`, and `@license`. This can be handy when working on different plugins with different copyright information.
+
+When creating a new plugin using the MDLCode wizard, you can specify the default boilerplate and docblock for the plugin right in the wizard.
+
+---
+
+To explore other MDLCode features, refer to the [main documentation page](README.md).

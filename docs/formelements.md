@@ -1,42 +1,39 @@
-# Working with form elements in MDLCode
+# Working with Form Elements in MDLCode
 
-MDLCode makes it easier for you to add elements to the moodleforms.
+MDLCode simplifies the process of adding elements to moodleforms.
 
-## Lookup form elements
+## Identifying Form Elements
 
-When you see an identifier highlighted in orange it means that MDLCode detected a Moodle
-entity.
+Whenever you encounter an identifier highlighted in orange, it signifies that MDLCode has recognized a Moodle™ entity.
 
-### Ctrl+Click to go to the form element class
+### Navigating to the Form Element Class
 
-Wherever you call `$mform->addElement()` or `$mform->createElement()` the first parameter
-will represent a name of the form element. The other parameters must be the same as in
-the constructor of this form element class. It is hard to remember all parameters
-for all form element classes, so MDLCode will help you with that.
+In instances where you call `$mform->addElement()` or `$mform->createElement()`, the first parameter refers to the form element's name. The remaining parameters should match those within the constructor of the corresponding form element class.
+With MDLCode you no longer need to remember all different
+parameters for different elements.
 
-You can either Ctrl+Click on a form element name hightlighted in orange or
-right click and select "Go to definition" from the context menu.
+You can either Ctrl+Click on an orange-highlighted form element name or right-click and select "Go to definition" from the context menu. This action will take you to the class responsible for the form element. Within this class, you can inspect the constructor and its accepted parameters.
 
-This will take you to the class responsible for this form element. In this class you
-can find the constructor and see what parameters it accepts.
+![Go to Definition](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/formelements/gotodefinition.png)
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/formelements/gotodefinition.png">
+### Detecting References to Non-Existing Form Elements
 
-### Detect references to non-existing form elements
+Should you make an error in the form element's name, MDLCode will promptly identify it and flag it as a problem.
 
-If you made a mistake in the form element name, MDLCode will detect it and report as a problem.
+## Referencing Form Elements (Premium)
 
-## Lookup form element references (Premium)
-
-When you define your own form element you will need to register it, for example:
+When creating your custom form element, it's essential to register it. For instance:
 
 ```php
 MoodleQuickForm::registerElementType('submit', "$CFG->libdir/form/submit.php", 'MoodleQuickForm_submit');
 ```
 
-Above this line you will see the Code Lenses with the list of references to this form element
-from code and from unittests.
+Just above this line, you'll spot Code Lenses that present references to this form element within the code and unit tests.
 
-For all core form elements you can find these references in the end of the file `lib/formslib.php`.
+For all core form elements, you can locate these references at the end of the `lib/formslib.php` file.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/formelements/references.png">
+![References](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/formelements/references.png)
+
+---
+
+To explore other MDLCode features, refer to the [main documentation page](README.md).

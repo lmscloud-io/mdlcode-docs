@@ -1,82 +1,71 @@
-# Working with strings in MDLCode
+# Managing Language Strings with MDLCode
 
-## Lookup strings
+## Looking Up Strings
 
-When you see an identifier highlighted in orange it means that MDLCode detected a Moodle
-entity.
+When you spot an orange-highlighted identifier, MDLCode has identified a Moodle™ entity.
 
-### Hover to see the string value
+### Hover for String Value
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/strings/strings2.png">
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/strings/strings2.png" title="String hover">
 
-In some cases you will see more than one string value, for example, when it is a help element
-or the string has conditional concatenation.
+Sometimes, you might encounter multiple string values, such as for help elements or strings with conditional concatenation.
 
-### Ctrl+Click to go to the string definition
+### Jump to String Definition
 
-You can also right click and select "Go to definition" from the context menu.
+You can Ctrl+Click or right-click and select "Go to definition" from the context menu.
 
 <img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/strings/string_definition.png">
 
-### Detect references to non-existing strings
+### Detecting Non-Existing String References
 
-If you made a mistake in the string identifier, MDLCode will detect it and report as a problem.
+MDLCode spots errors in string identifiers and flags them as problems.
 
-## Lookup string references (Premium)
+## Exploring String References (Premium)
 
-### Right click and select "Find all references"
+### Finding All References
 
-In the language file (PLUGINDIR/lang/en/PLUGINNAME.php) you can right click on the string
-identifier and find all references to it - select
-"Find all references", "Go to references" or "Peek > Peek references", whichever you prefer.
+In the language file (`PLUGINDIR/lang/en/PLUGINNAME.php`), right-click on a string identifier, then select "Find all references", "Go to references", or "Peek > Peek references".
 
 <img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/strings/string_references.png">
 
-### Identify unused strings
+### Identifying Unused Strings
 
-In the language file the string identifier that are not used will be reported as problems.
+Unused string identifiers in the language file are reported as problems.
 
-Please note that there can be false positives. You can add [directives](directives.md) to
-disable problem reporting or advise Mdlcode about existing references.
+If you find any false positive errors,
+consider using [directives](directives.md) to fine-tune problem reporting or provide information to MDLCode about existing references.
 
-## Create new strings (Premium)
+### Renaming Strings
 
-### Create missing strings
+Right-click a string identifier in the language file and select "Rename symbol". This will update the string and all references to it. Occasionally, references might not auto-update, such as with dynamically generated identifiers or when references come from [directives](directives.md). In such cases, a notification popup will appear.
 
-If you see a problem 'String does not exist', place the cursor on the string identifier.
-The yellow lightbulb will appear on the left. Click on it and select "Create string".
+## Creating New Strings (Premium)
+
+### Generating Missing Strings
+
+Encountering a 'String does not exist' issue? Click on the "Quick fix" link in the
+error popup and choose "Create string."
 
 <img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/strings/createstring1.png">
 
-### Convert text to language string
+### Converting Text to Language String
 
-Select the text that you want to convert. In PHP and JS files it has to be inside quotes, in MUSTACHE
-files it can be anything except for tags and placeholders.
-
-The yellow lightbulb will appear on the left. Click on it and select "Replace with new string ...".
+Highlight the text you want to convert. In PHP and JS files, it should be enclosed in quotes; in MUSTACHE files, it can be any content except tags and placeholders. Click the yellow lightbulb icon on the left and select "Replace with new string ..."
 
 <img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/strings/createstring2.png">
 
-If a language string with exactly the same contents already exists, you will also see actions
-"Replace with existing string ..."
+If an identical language string already exists, you'll also see the option "Replace with existing string ..."
 
 <img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/strings/createstring3.png">
 
-## Sort strings alphabetically (Premium)
+## Sorting Strings Alphabetically (Premium)
 
-Right click anywhere in a language file and select "Sort strings alphabetically" from the context menu.
+Place a mouse cursor on top of any text in the language file, click on the yellow lightbulb on the left and choose "Sort strings alphabetically".
 
 <img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/strings/sortstrings.png">
 
-If there is a comment "// Deprecated ..." in the file, the string identifiers after this comment
-will not be sorted.
+Strings after a "// Deprecated ..." comment won't be sorted.
 
-## Renaming strings (Premium)
+---
 
-Right-click on a string identifier in the language file and select "Rename symbol".
-This will rename the string and all references to it.
-
-Sometimes not all references can be renamed automatically, for example, when the string identifier
-in a reference was created dynamically, or when string reference comes from a [directive](directives.md).
-In this case a popup will appear notifying you that some references could not be changed.
-changed automatically
+For more MDLCode features, refer to the [main documentation](README.md).

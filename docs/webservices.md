@@ -1,55 +1,47 @@
 # Working with Web Services in MDLCode
 
-## Lookup web services
+## Identifying Web Services
 
-When you see an identifier highlighted in orange it means that MDLCode detected a Moodle
-entity.
+When you spot an identifier highlighted in orange, it means that MDLCode has recognized a Moodle™ entity.
 
-### Ctrl+Click to go to the web service definition
+### Navigating to the Web Service Definition
 
-You can either Ctrl+Click on a web service name hightlighted in orange or
-right click and select "Go to definition" from the context menu.
+You can either Ctrl+Click on an orange-highlighted web service name or right-click and select "Go to definition" from the context menu.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/webservices/gotodefinition.png">
+![Go to Definition](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/webservices/gotodefinition.png)
 
-This will take you to the `db/services.php` file in the respective plugin where the web service
-is defined.
+This will take you to the `db/services.php` file in the respective plugin where the web service is defined.
 
-### Go to the web service implementation
+### Accessing Web Service Implementation
 
-When in the `db/services.php` file you can see "Go to implementation" Code Lens above the
-web service name. Click on it to go to the implementation of the web service.
+In the `db/services.php` file, you'll find a "Go to implementation" Code Lens positioned above the web service name. Click on it to access the web service's implementation.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/webservices/definition.png">
+![Go to Implementation](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/webservices/definition.png)
 
-As you know in order to implement a web service you need to implement three functions.
-The Code Lenses will allow you to quickly navigate between them.
+As you know, implementing a web service requires three functions. The provided Code Lenses enable easy navigation between these functions.
 
-Next to the implementation function you can see "WS definition", "WS parameters" and
-"WS returns" Code Lenses. Click on them to go to the definition or respective methods.
+Next to the implementation function, you'll find "WS definition", "WS parameters", and "WS returns" Code Lenses. Click on them to access the respective definitions or methods.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/webservices/implementation.png">
+![Implementation](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/webservices/implementation.png)
 
-## Lookup web service references (Premium)
+## Referencing Web Services (Premium)
 
-Next to both web service definition (in `db/services.php`) and web service implementation
-function you can see the Code Lens "X AJAX references". This will take you to the places
-where the web service is called from JS files.
+Next to both the web service definition (in `db/services.php`) and the web service implementation function, you'll find the "X AJAX references" Code Lens. This feature directs you to the locations where the web service is called from JavaScript (JS) files.
 
-Also next to the web service definition (in `db/services.php`) you can see the Code Lenses
-with the list of references from code and from unittests.
+Additionally, near the web service definition (in `db/services.php`), you'll find Code Lenses displaying a list of references from code and unittests.
 
-If you see the "X references" Code Lens next to the web service implementation function,
-note that this Code Lens is provided by your PHP extension and not by MDLCode.
+If you see the "X references" Code Lens next to the web service implementation function, please note that this Code Lens is provided by your PHP extension, not MDLCode.
 
-### Identify unused web services
+### Detecting Unused Web Services
 
-MDLCode will report a problem if a web service is defined as AJAX web service but is
-never called from JS files.
+MDLCode will report a problem if a web service is defined as AJAX but remains unused in JS files.
 
-Please note that there can be false positives. You can add [directives](directives.md) to
-disable problem reporting or advise Mdlcode about existing references.
+Please note that there can be false positives. You can use directives to suppress problem reporting or to inform MDLCode about existing references.
 
-## Execute web services (Premium)
+## Executing Web Services (Premium)
 
-See [Executing Web services](executews.md)
+Refer to [Executing Web services](executews.md) for more information.
+
+---
+
+To explore other MDLCode features, refer to the [main documentation page](README.md).

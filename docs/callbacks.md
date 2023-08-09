@@ -1,63 +1,51 @@
-# Working with Moodle callbacks in MDLCode
+# Working with Moodle™ Callbacks in MDLCode
 
-There are many places in Moodle core where it calls functions that are defined in
-plugins.
+Numerous instances within the Moodle core involve calling functions defined within plugins.
 
-In some cases it is one-to-many type of callback, which means that multiple
-plugins can implement it and all of these callbacks will be executed.
+In some cases, a **one-to-many** callback occurs, enabling multiple plugins to implement it, resulting in the execution of all corresponding callbacks.
 
-In some cases it is one-to-one type of callback, which means that core looks for
-a specific function in a particular plugin and will call it if found. There are
-many such callbacks in Activity modules plugins, for example.
+Conversely, a **one-to-one** callback arises when the core searches for a specific function within a designated plugin and invokes it upon discovery. They are especially common in Activity module plugins.
 
-Normally callbacks are implemented in the file `lib.php` of the plugins.
+Typically, callbacks implementations are found within the plugin's `lib.php` file.
 
-MDLCode is aware of **all callbacks** used in Moodle core in each supported Moodle version.
+MDLCode is aware of **all callbacks** used in Moodle core across supported Moodle™ versions.
 
-Please note that add-on plugins theoretically may also define callbacks and MDLCode may not be
-able to detect some of them.
+However, please note that add-on plugins might potentially define callbacks that MDLCode can not detect.
 
-## Detecting callbacks implementations
+## Identifying Callback Implementations
 
-In `lib.php` file of the plugin MDLCode will detect the functions that are implementing
-callbacks and display a Code Lens "Callback invokation" above the function definition.
+Within the plugin's `lib.php` file, MDLCode identifies functions that execute callbacks, displaying a Code Lens "Callback Invocation" above their definitions.
 
-The actual presense of this Code Lens will inform you that this function is a callback
-implementation and clicking on this link will take you to all places in core where this
-callback may be called. From there you can figure out **which parameters are expected**.
+The presence of this Code Lens signifies a callback's implementation. Clicking this link guides you to instances within the core where this callback might be invoked. Consequently, you can discover **the expected parameters** for these instances.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/callbacks/callback_with_arrow.png">
+![Callback with Arrow](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/callbacks/callback_with_arrow.png)
 
-Intellisense extensions such as "PHP" (Devsense) or "PHP Intelephense" may report these
-functions as having "0 references" because they are not called directly from the code.
+However, it's important to note that Intellisense extensions like "PHP" (Devsense) or "PHP Intelephense" may indicate "0 references" for these functions since they aren't directly invoked within the code.
 
-## Callback search (Premium)
+## Callback Search (Premium)
 
-When you navigate to the place where callback is called from you will see a Code Lens
-"Callback implementations" above the function that is calling the callback.
+Upon navigating to a callback's calling point, you'll spot a Code Lens "Callback Implementations" above the calling function.
 
-Clicking on this link will take you to all places in the code where this callback is
-implemented.
+Clicking this link leads you to various code locations where this callback is implemented.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/callbacks/invokation_with_arrow.png">
+![Invocation with Arrow](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/callbacks/invokation_with_arrow.png)
 
-## Callback autocomplete (Premium)
+## Callback Autocomplete (Premium)
 
-In the `lib.php` file in your plugin start typing "function ..." and you will see
-the autocomplete list of all callbacks that are available for this plugin.
+While editing the `lib.php` file within your plugin, start typing "function ...". The autocomplete list will promptly display all available callbacks for that plugin.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/callbacks/autocomplete.png">
+![Autocomplete](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/callbacks/autocomplete.png)
 
-## New callback wizard (Premium)
+## New Callback Wizard (Premium)
 
-New callback wizard will help you to choose a callback from the list of all callbacks available for this plugin type, and copy implementation from
-another plugin. MDLCode also provides default implementation for some callbacks.
+The New Callback Wizard assists you in selecting a callback from the plugin-specific list, facilitating implementation copying from another plugin. Additionally, MDLCode supplies default implementations for certain callbacks.
 
-To open wizard do one of the following:
-- inside `lib.php` file place the mouse cursor on any text and click
-  on the yellow lightbulb that appears on the left side of the editor;
-  select "Add callback" from the menu.
-- click on the "New..." button in the Wizard view in the Moodle plugins
-  view container.
+To access the wizard, perform either of the following:
+- Inside the `lib.php` file, position the cursor on any text, and click the yellow lightbulb situated on the editor's left side. Select "Add Callback" from the menu.
+- In the Moodle plugins view container, click on the "New..." button within the Wizard view.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/callbacks/add.png">
+![Add Callback](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/callbacks/add.png)
+
+---
+
+To explore other MDLCode features, refer to the [main documentation page](README.md).

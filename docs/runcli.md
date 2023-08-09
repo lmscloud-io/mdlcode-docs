@@ -1,57 +1,45 @@
-# Running Moodle CLI scripts in MDLCode
+# Running Moodle CLI Scripts in MDLCode
 
-* Select "MDLCode: Run CLI script" command from the command palette, or
-* Open MDLCode Wizard and click "Run CLI script"
+* To run a CLI script, choose the "MDLCode: Run CLI script" command from the command palette, or
+* Open the MDLCode Wizard and click "Run CLI script"
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/runcli/runcli.png">
+![Run CLI Script](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/runcli/runcli.png)
 
-## Before you run your first script
+## Before Running Your First Script
 
-Open MDLCode settings and fill the path to PHP and the command to run as www user.
-For your convenience the link to the extension settings is added to this panel.
+Before executing your first script, access MDLCode settings and provide the PHP path and the command prefix to run a script as the www user. A link to the extension settings is conveniently available on this panel.
 
-Most of Moodle CLI scripts should be executed as the same user as your web server user,
-usually it is either `www-data` or `www`. If you are not sure what user is used by your web server,
-check the owner of the files in the `moodledata` directory.
+For most Moodle CLI scripts, running them as the same user as your web server user is recommended. Typically, this user is either `www-data` or `www`. To identify the user used by your web server, check the owner of files in the `moodledata` directory.
 
-If you run CLI scripts as the current user, it may create moodledata files with the
-wrong owner and the web server will not be able to access or overwrite them.
+If you choose to run CLI scripts as the current user, keep in mind that it might lead to moodledata files being generated with incorrect owner. Consequently, the web server might not be able to access or modify these files.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/runcli/settings.png">
+![Settings](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/runcli/settings.png)
 
-## Running CLI scripts
+## Running CLI Scripts
 
-MDLCode creates two terminal windows - `"Moodle CLI (www)"` and `"Moodle CLI (current user)"`.
-The first one is used to run scripts as the web server user, the second one - as the current user.
+MDLCode sets up two terminal windows: `"Moodle CLI (www)"` and `"Moodle CLI (current user)"`. The former is used to execute scripts as the web server user, while the latter is for the current user.
 
-When executing scripts as the web server user, you might need to enter the password for `sudo` command.
-Consequtive commands to this terminal will not ask for the password again. Neither MDLCode nor
-other VSCode extensions can read the contents of the terminals or the password you enter.
-MDLCode is only able to send commands to the terminal.
+While running scripts as the web server user, you might need to input the `sudo` command password. Subsequent commands in this terminal won't ask for the password again. Remember, neither MDLCode nor other VSCode extensions can access terminal contents or the entered password. MDLCode can only send commands to the terminal.
 
-## Running arbitrary scripts
+## Running Custom Scripts
 
-You can also run any scripts through this wizard. For this do not enter anything in the "CLI script"
-field, select "Custom..." parameters and enter the command you want to run in the "Custom parameters" field.
-For example, you can run `grunt` this way.
+Through this wizard, you can also run custom scripts. Leave the "CLI script" field empty, choose "Custom..." parameters, and enter the desired command in the "Custom parameters" field. This approach enables you to execute commands like `grunt`.
 
-## Code integration
+## Code Integration
 
-Next to the scheduled tasks definitions you can notice an "Execute task" code action. This is a shortcut
-to running a CLI script `php admin/cli/scheduled_task.php --execute=CLASSNAME`.
+Beside scheduled tasks definitions, you'll find an "Execute task" code action. This serves as a shortcut to running a CLI script using `php admin/cli/scheduled_task.php --execute=CLASSNAME`.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/runcli/executetask.png">
+![Execute Task](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/runcli/executetask.png)
 
-## Saving favourite CLI scripts (Premium)
+## Saving Favorite CLI Scripts (Premium)
 
-You can save frequently used scripts to the favourites list. Favourite commands appear in the menu on the
-right and also you can pick them from the command palette by selecting **"MDLCode: Run CLI script"**.
+Save frequently used scripts to your favorites list. These preferred commands will appear in the right-click menu and can also be accessed from the command palette using **"MDLCode: Run CLI script"**.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/runcli/palette.png">
+![Favorites in Right-Click Menu](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/runcli/palette.png)
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/runcli/runcliquickpick.png">
+![Quick Pick for Favorites](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/runcli/runcliquickpick.png)
 
-Here are some examples of the scripts that developers often use:
+Here are some examples of commonly used developer scripts:
 
 <table>
 <tr>
@@ -80,3 +68,7 @@ Here are some examples of the scripts that developers often use:
 <td>www</td>
 </tr>
 </table>
+
+---
+
+To explore other MDLCode features, refer to the [main documentation page](README.md).

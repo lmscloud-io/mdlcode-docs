@@ -1,46 +1,47 @@
-# Writing behat tests with MDLCode
+# Writing Behat Tests with MDLCode
 
-## Step definition lookup
+## Finding Step Definitions
 
-### Autocompletion
+### Using Autocompletion
 
-When you work on a scenario in a feature file, you can use autocomplete to insert a step.
-To do it inside a scenario start typing "Given", "When", "Then" or "And", then type
-space and any text, you will see a list of available steps that match the text you typed.
+While working on a scenario in a feature file, you can use autocomplete to insert a step.
+To do this, type "Given", "When", "Then", or "And", followed by a space and any text. You will then see a list of available steps that match the text you typed.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/behat/autocomplete.png">
+![Autocompletion](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/behat/autocomplete.png)
 
-### Ctrl+Click to go to the step definition
+### Navigating to Step Definitions
 
-In feature files click anywhere in the step while holding the control key (or right click and
+In feature files, you can click anywhere within a step while holding the control key (or right-click and
 select "Go to definition").
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/behat/gotodefinition_feature.png">
+![Go to Definition (Feature)](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/behat/gotodefinition_feature.png)
 
-In behat php files you will see that the first parameter for the "execute()" function is
-highlighted with orange. Click on it while holding the control key (or right click and
+For Behat PHP files, you'll notice that the first parameter for the "execute()" function is
+highlighted in orange. Click on it while holding the control key (or right-click and
 select "Go to definition").
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/behat/gotodefinition.png">
+![Go to Definition](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/behat/gotodefinition.png)
 
-### Right click and select "Find all references"
+### Finding All References
 
-In the behat file (PLUGINDIR/tests/behat/behat_NAME.php) you can right click on the function
-name and find all references to it - select
-"Find all references", "Go to references" or "Peek > Peek references", whichever you prefer. This will search for references
-in other behat files and in feature files.
+In the Behat file (`PLUGINDIR/tests/behat/behat_NAME.php`), you can right-click on a function
+name to find all references to it. You can choose to "Find all references," "Go to references," or "Peek > Peek references," based on your preference. This search will extend to other Behat files and feature files.
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/behat/references.png">
+![Find All References](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/behat/references.png)
 
-### Detect references to non-existing steps
+### Detecting Non-Existing Steps
 
-If you made a mistake in the step definition, MDLCode will detect it and report as a problem.
+If you've made a mistake in the step definition, MDLCode will identify it and report it as a problem.
 
-## Miscellaneous diagnostics
+## Miscellaneous Diagnostics
 
-MDLCode will report various types of problem in the feature files:
-- duplicate feature names
-- duplicate scenario names
-- duplicate tags on a feature or scenario
-- missing tags corresponding to the plugin type and/or plugin name on the feature
-- unexpected lines in feature files
+MDLCode will identify various types of problems in feature files:
+- Duplicate feature names
+- Duplicate scenario names
+- Duplicate tags on a feature or scenario
+- Missing tags corresponding to the plugin type and/or plugin name on the feature
+- Unexpected lines in feature files
+
+---
+
+To explore other MDLCode features, refer to the [main documentation page](README.md).

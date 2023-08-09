@@ -1,71 +1,53 @@
-# Working with JavaScript modules in MDLCode
+# Managing JavaScript Modules with MDLCode
 
-Moodle code contains several types of JavaScript files:
-- ES6 modules (use 'import' and 'export')
-- AMD modules (use 'define()')
-- YUI modules - legacy framework that is still used in several places
-- Plain JavaScript files such as `module.js` or `block.js`
+The Moodle™ codebase includes various types of JavaScript files:
+- ES6 modules (using 'import' and 'export')
+- AMD modules (using 'define()')
+- YUI modules - a legacy framework still in use in several places
+- Plain JavaScript files like `module.js` or `block.js`
 
-You can also embed JavaScript code in Mustache templates using `{{#js}}` directive.
+Additionally, you can embed JavaScript code in Mustache templates using the `{{#js}}` directive.
 
-VSCode will help you to navigate between ES6 modules and functions. MDLCode will additionally
-help you to navigate between AMD and YUI modules as well as detect links
-from `*.php` and `*.mustache` files.
+VSCode facilitates navigation between ES6 modules and functions. MDLCode goes a step further, aiding navigation between AMD and YUI modules, and detecting links from `*.php` and `*.mustache` files.
 
-## Create jsconfig.json
+## Creating jsconfig.json
 
-In order for VSCode to know about the locations of the modules you need to create a file `jsconfig.json`
-and place it in the root folder of your Moodle.
+For VSCode to recognize module locations, you must create a `jsconfig.json` file and place it in your Moodle's root folder. To achieve this, use the command **"MDLCode: Create/update jsconfig.json for JS module resolution"** from the command palette.
 
-To do it you can select command **"MDLCode: Create/update jsconfig.json for JS module resolution"**
-from the command palette.
+## Navigating Between JS Modules
 
-## Navigate between JS modules
+Whenever an orange-highlighted module name appears (in **php**, **js**, or **mustache** files), Ctrl+Click on it to access the module definition.
 
-Whenever you see a module name highlighted in orange (in **php**, **js** or **mustache** files) you can
-Ctrl+Click on it to navigate to the module definition.
+![Navigate](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/jsmodules/gotodefinition.png)
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/jsmodules/gotodefinition.png">
+### Detecting Non-Existing Module References
 
-As mentioned above, VSCode intellisense will also help you to navigate between ES6 functions.
+If you mistakenly name or reference a module when importing it or in php or mustache files, MDLCode identifies the error and reports it as a problem.
 
-### Detect references to non-existing modules
+## Exploring References (Premium)
 
-If you made a mistake in the module name when importing it or refering to it from php or mustache files,
-MDLCode will detect it and report as a problem.
+Above the `@module` directive in the docblock of a JS file, you'll spot Code Lenses labeled "X references." Click this link or right-click a module name, then choose "Find all references."
 
-## Lookup references (Premium)
+![References](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/jsmodules/refs.png)
 
-In the JS file above the `@module` directive in the docblock you will see Code Lenses "X references".
-You can either click on theis link or right click on a module name and select "Find all references".
+### Identifying Unused Modules
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/jsmodules/refs.png">
+If a module remains unused in the code, it's flagged as a problem. Remember, there may be false positives. Use [directives](directives.md) to adjust problem reporting or inform MDLCode about existing references.
 
-### Identify unused modules
+## Renaming JS Modules (Premium)
 
-If a module is not used anywhere in the code it will be reported as a problem.
+Right-click a module name after the `@module` directive and choose "Rename symbol." This not only renames the module but also updates the file name and modifies all references.
 
-Please note that there can be false positives. You can add [directives](directives.md) to
-disable problem reporting or advise Mdlcode about existing references.
+The new name doesn't have to be in the same folder. For instance, renaming `tool_plugin/welcome` to `tool_plugin/local/hello` will prompt MDLCode to create a `amd/src/local` folder, adjust the filename, and relocate it.
 
-## Renaming JS modules (Premium)
+## Additional Features
 
-Right-click on a module name after the `@module` directive and select "Rename symbol".
-This will rename the module, rename the file and change all references to it.
+### Fixing Module Names
 
-The new name that you specify does not have to be in on the same level. For example, you can rename
-module `tool_plugin/welcome` into `tool_plugin/local/hello` and MDLCode will automatically
-create a folder `amd/src/local`, rename the file and move it there.
+Moodle coding standards recommend a docblock with a `@module` tag for each JS module. MDLCode identifies the module name in the docblock and suggests corrections if it doesn't match the file name.
 
-## Other features
+Problems are reported if the module name is missing, the docblock is absent, or the module name is incorrect. Place your cursor on the problem, and a yellow lightbulb appears. Click it and select the appropriate command to fix the problem.
 
-### Fix module name
+---
 
-Moodle coding standards recommend that each JS module has a docblock with a `@module` tag. MDLCode
-will detect the module name in the docblock and will suggest to fix the module name if it does not
-match the file name.
-
-If the module name is missing, or the docblock is missing, or the module name is incorrect
-it will be reported as a problem. Place a cursor on the problem and a yellow lightbulb will
-appear. Click on it and select appropriate command to fix the problem.
-
+To explore other MDLCode features, refer to the [main documentation page](README.md).
