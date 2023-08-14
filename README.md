@@ -1,3 +1,5 @@
+[![Version](https://img.shields.io/visual-studio-marketplace/v/LMSCloud.mdlcode)](https://marketplace.visualstudio.com/items?itemName=LMSCloud.mdlcode)
+
 # MDLCode — Moodle™ Plugin Development
 
 VSCode extension that helps during the development of Moodle plugins.
