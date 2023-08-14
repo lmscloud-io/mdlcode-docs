@@ -28,10 +28,10 @@ Additional topics:
 **This extension is currently in development, and all premium features are available for free until November 2023.**
 
 
-<center>
-<a href="https://marketplace.visualstudio.com/items?itemName=LMSCloud.mdlcode"><img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/presentation.png" width="400" style="max-width:400px"></a>
-</center>
+<p align="center">
+<a href="https://marketplace.visualstudio.com/items?itemName=LMSCloud.mdlcode"><img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/presentation.png" width="400" style="max-width:400px"></a><br>
+</p>
 
-<center>
+<p align="center">
 <a href="https://marketplace.visualstudio.com/items?itemName=LMSCloud.mdlcode"><small>Find MDLCode on Visual Studio Code Marketplace</small></a>
-</center>
+</p>
