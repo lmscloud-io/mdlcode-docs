@@ -22,7 +22,7 @@ In a class where hook callback is located:
 
 In a class where hook is defined:
 
-<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/hooks/hooksdefinition.png">
+<img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/hooks/hookdefinition.png">
 
 Wherever a hook is emitted:
 
