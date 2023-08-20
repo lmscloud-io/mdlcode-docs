@@ -14,6 +14,7 @@ Learn how MDLCode helps you to work with:
 - [JS modules](jsmodules.md)
 - [Mustache templates](templates.md)
 - [Callbacks](callbacks.md)
+- [Hooks (Moodle 4.3+)](hooks.md)
 - [Form elements](formelements.md)
 - [Web services](webservices.md)
 - [Behat steps](behat.md)

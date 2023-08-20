@@ -28,7 +28,7 @@ When you open the same Moodle instance again, reindex will be much faster.
 
 ## Entities are not highlighted while I type the code
 
-MDLCode can only detect entities in the PHP and JavaScript files that do not have syntax errors. While
+MDLCode can only detect entities in the PHP and JavaScript files that **do not have syntax errors**. While
 you type the code, the file may not be syntactically correct (missing brackets, quotes, etc.) and
 MDLCode will not be able to detect entities.
 
@@ -38,7 +38,7 @@ MDLCode tries to automatically re-index files that are changed. If you notice th
 highlighted or references search does not work, or new entities do not appear in the lists,
 you can do the following:
 
-- If the problem is in MDLCode Wizard, try closing it and opening again;
+- If the problem is in MDLCode Wizard, try closing the Wizard tab and opening again;
 - If the plugins or files list in the "Plugins" view is out of date, try clicking the "Refresh" button;
 - If the problem is in the code editor, try making any change to the file, switching to another tab and back;
 - Finally you can force full reindex by selecting "MDLCode: Re-index all files in this Moodle instance"
@@ -46,7 +46,7 @@ you can do the following:
 
 ![Re-index](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/troubleshooting/reindex.png)
 
-If you can reproduce the scenario when MDLCode does not re-index something automatically, please
+If you consistently hit a situation when MDLCode does not re-index something automatically, please
 [create an issue](https://github.com/lmscloud-io/mdlcode-docs/issues) and describe how to reproduce it.
 
 ---
