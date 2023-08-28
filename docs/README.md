@@ -25,6 +25,7 @@ Additional topics:
 - [Directives](directives.md)
 - [Boilerplate and docblock](boilerplate.md)
 - [Recommendations for setting up VSCode](setup.md)
+- [MDLCode settings](configuration.md)
 - [Troubleshooting](troubleshooting.md)
 
 **This extension is currently in development, and all premium features are available for free until November 2023.**

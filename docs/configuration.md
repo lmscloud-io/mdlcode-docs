@@ -45,14 +45,13 @@ Overwrite decorations style for `default` (any entity) or for a specific entity 
       "light": {
         "backgroundColor": "#dddddd",
       },
-      },
-      "dbTable": {
-        "border": "2px dashed rgba(211, 220, 50, .6)",
-        "color": "#00ffff",
-      },
-      "string": {
-        "color": "orange"
-      }
+    },
+    "dbTable": {
+      "border": "2px dashed rgba(211, 220, 50, .6)",
+      "color": "#00ffff",
+    },
+    "string": {
+      "color": "orange"
     }
   }
 }
@@ -68,11 +67,11 @@ You can add [directives](directives.md) to ignore a specific problem (or all pro
 want to ignore a problem in all files, you can do it through the MDLCode settings.
 
 Each problem type in MDLCode has a code. You can find this code in the "Problems" view, it will be displayed dimmed
-brackets after the error message:
+in the brackets after the error message:
 
 ![Problem codes](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/configuration/problems.png)
 
-Add this code to the "Ignore Problems" setting in MDLCode to mute problem notifications throughout the project.
+Add this code to the "mdlcode.ignoreProblems" setting in MDLCode to mute problem notifications throughout the project.
 
 Example:
 
