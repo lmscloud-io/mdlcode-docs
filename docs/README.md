@@ -1,9 +1,9 @@
 [![Version](https://img.shields.io/visual-studio-marketplace/v/LMSCloud.mdlcode)](https://marketplace.visualstudio.com/items?itemName=LMSCloud.mdlcode)
 
 
-<table id="header-table" style="border: 0px;">
+<table id="header-table" style="border:0px solid white;">
 <tr style="border: 0px;">
-<td style="border: 0px;">
+<td style="border:0px solid white;">
 <a href="https://marketplace.visualstudio.com/items?itemName=LMSCloud.mdlcode" title="MDLCode - VSCode extension for Moodle™ developers">
 <img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/icon_in_circle.svg" width="100" height="100" style="width:100px"></a>
 </td>
