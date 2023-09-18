@@ -1,6 +1,6 @@
 [![Version](https://img.shields.io/visual-studio-marketplace/v/LMSCloud.mdlcode)](https://marketplace.visualstudio.com/items?itemName=LMSCloud.mdlcode)
 
-<table style="border:none">
+<table id="header-table" style="border:none">
 <tr style="border:none">
 <td style="border:none">
 <a href="https://marketplace.visualstudio.com/items?itemName=LMSCloud.mdlcode" title="MDLCode - VSCode extension for Moodle™ developers">
@@ -9,6 +9,17 @@
 <td style="border:none">
 <h1 style="border:none; margin-top:0;">VSCode extension<br>for Moodle™ developers</h1>
 </td></tr></table>
+
+<style>
+  table#header-table td,
+  table#header-table tr,
+  table#header-table h1 {
+    border: none !important;
+  }
+  table#header-table h1 {
+    margin-top: 0 !important;
+  }
+</style>
 
 MDLCode is a Visual Studio Code extension that helps Moodle developers write code
 more efficiently and with fewer errors.
