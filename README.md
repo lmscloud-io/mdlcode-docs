@@ -2,6 +2,10 @@
 
 # MDLCode — Moodle™ Plugin Development
 
+<p align="center">
+<a href="https://github.com/lmscloud-io/mdlcode-docs/blob/main/docs/setup.md">-&gt; Recommendations for setting up VSCode for Moodle development</a>
+</p>
+
 VSCode extension that helps during the development of Moodle plugins.
 
 - Convenient navigation of plugins.
