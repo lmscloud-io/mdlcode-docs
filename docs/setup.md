@@ -53,13 +53,18 @@ Watch a full video on how to setup VSCode for Moodle development:
   "php.format.rules.declKeepRightParenAndOpenBraceOnOneLine": true,
   "php.format.rules.spaceAroundConcatenation": true,
   "php.format.rules.spaceBeforeParenthesesInControlStatements": true,
+}
+```
 
-  // Following setting must be configured for your own environment:
+Following setting must be configured for your own environment:
 
+```jsonc
+{
   // MDLCode extension:
   "mdlcode.copyright": "Your Name",
   "mdlcode.cli.phpPath": "php",
   "mdlcode.cli.prefix": "sudo -u www-data",
+
   // phpcs extension:
   "phpcs.executablePath": "/path/to/moodle-plugin-ci/vendor/bin/phpcs"
 }
