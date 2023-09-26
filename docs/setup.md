@@ -11,7 +11,7 @@ Watch a full video on how to setup VSCode for Moodle development:
 * ESLint [dbaeumer.vscode-eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 * Mustache [dawhite.mustache](https://marketplace.visualstudio.com/items?itemName=dawhite.mustache)
 * Snippets and Syntax Highlight for Gherkin (Cucumber) [stevejpurves.cucumber](https://marketplace.visualstudio.com/items?itemName=stevejpurves.cucumber)
-* PHP Debug [felixfbecker.php-debug](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug)
+* PHP Debug [xdebug.php-debug](https://marketplace.visualstudio.com/items?itemName=xdebug.php-debug)
 * GitLens — Git supercharged [eamodio.gitlens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 * phpsc [shevaua.phpcs](https://marketplace.visualstudio.com/items?itemName=shevaua.phpcs), needs additional setup, see [here](#phpcs-extension-setup)
 * Trailing Spaces [shardulm94.trailing-spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces)
