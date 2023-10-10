@@ -2,7 +2,7 @@
 
 Watch a full video on how to setup VSCode for Moodle development:
 
-[![Setting up VSCode for Moodle development](https://img.youtube.com/vi/iokOiSVNZ0Y/0.jpg)](https://youtu.be/iokOiSVNZ0Y)
+[![Setting up VSCode for Moodle development](https://img.youtube.com/vi/iokOiSVNZ0Y/0.jpg)](https://youtu.be/UCjrNxKuGAY)
 
 ## Extensions featured in the video
 
