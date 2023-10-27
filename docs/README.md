@@ -11,7 +11,7 @@ MDLCode is a Visual Studio Code extension that helps Moodle developers write cod
 more efficiently and with fewer errors.
 
 <p align="center">
-<a href="setup.md"><small>-&gt; Recommendations for setting up VSCode</small></a>
+<a href="../tutorials/setup.md"><small>-&gt; Recommendations for setting up VSCode</small></a>
 </p>
 
 Learn how MDLCode helps you to work with:
@@ -33,7 +33,7 @@ Learn how MDLCode helps you to work with:
 Additional topics:
 - [Directives](directives.md)
 - [Boilerplate and docblock](boilerplate.md)
-- [Recommendations for setting up VSCode](setup.md)
+- [Recommendations for setting up VSCode](../tutorials/setup.md)
 - [MDLCode settings](configuration.md)
 - [Troubleshooting](troubleshooting.md)
 
