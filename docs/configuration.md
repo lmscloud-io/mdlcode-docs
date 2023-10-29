@@ -11,7 +11,7 @@ from the Command Palette.
 
 If you don't specify anything it is equivalent to the following:
 
-```
+```json
 {
   "mdlcode.decorations": {
     "default": {
@@ -20,6 +20,7 @@ If you don't specify anything it is equivalent to the following:
       },
       "light": {
         "color": "#de481c"
+      }
     }
   }
 }
@@ -35,7 +36,7 @@ which means that all entities will be highlighted with the dark orange color:
 Overwrite decorations style for `default` (any entity) or for a specific entity types (`string`, `dbTable`, `jsModule`,
 `capability`,  `formElement`, `callback`, `webservice`, `behatStep`, `template`):
 
-```
+```json
 {
   "mdlcode.decorations": {
     "capability": {
@@ -75,7 +76,7 @@ Add this code to the "mdlcode.ignoreProblems" setting in MDLCode to mute problem
 
 Example:
 
-```
+```json
 {
   "mdlcode.ignoreProblems": [
     "missing-docblock",

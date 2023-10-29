@@ -126,7 +126,7 @@ This functionality is not fully available yet, the documentation will be updated
 
 Here are examples of using the directives for Moodle core:
 
-https://github.com/moodle/moodle/compare/MOODLE_402_STABLE...lmscloud-io:moodle:mdlcode402
+[View on Github](https://github.com/moodle/moodle/compare/MOODLE_402_STABLE...lmscloud-io:moodle:mdlcode402)
 
 Note that this branch also includes directives like "callback", "variant" and "call-subject"
 that are not available for the plugins yet.

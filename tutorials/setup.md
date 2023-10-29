@@ -1,4 +1,6 @@
 # Recommendations for Setting up VSCode for Moodle™ Development
+2023-10-10
+> Tutorial for developers who switch from other IDEs to VSCode.
 
 Watch a full video on how to setup VSCode for Moodle development:
 
