@@ -12,7 +12,7 @@
 - [Behat steps](behat.md)
 - [Running CLI scripts](runcli.md)
 - [Executing Web services](executews.md)
-- [Directives](directives.md)
 - [Boilerplate and docblock](boilerplate.md)
 - [MDLCode settings](configuration.md)
 - [Troubleshooting](troubleshooting.md)
+- [Directives](directives.md)

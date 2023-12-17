@@ -3,7 +3,7 @@
 # MDLCode — Moodle™ Plugin Development
 
 <p align="center">
-<a href="https://github.com/lmscloud-io/mdlcode-docs/blob/main/docs/setup.md">-&gt; Recommendations for setting up VSCode for Moodle development</a>
+<a href="https://mdlcode.dev/tutorials/setup">-&gt; Recommendations for setting up VSCode for Moodle development</a>
 </p>
 
 VSCode extension that helps during the development of Moodle plugins.
@@ -18,12 +18,10 @@ VSCode extension that helps during the development of Moodle plugins.
 - Autocomplete for callbacks and Behat steps.
 - Diagnostics for various issues with quick fixes.
 
-**This extension is currently in development; all premium features are available for free until November 2023.**
-
 ### Example: Hover over the string to view its value
 
 ![Hover Example](https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/strings/strings2.png)
 
 This is just one instance of how MDLCode can assist you.
 
-For a complete list of features, refer to the [MDLCode documentation](https://github.com/lmscloud-io/mdlcode-docs/blob/main/docs/README.md).
+For a complete list of features, refer to the [MDLCode documentation](https://mdlcode.dev/docs).

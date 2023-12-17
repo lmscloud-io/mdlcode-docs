@@ -27,11 +27,10 @@ Learn how MDLCode helps you to work with:
 - [Executing Web services](executews.md)
 
 Additional topics:
-- [Directives](directives.md)
 - [Boilerplate and docblock](boilerplate.md)
-- [Recommendations for setting up VSCode](../tutorials/setup.md)
 - [MDLCode settings](configuration.md)
 - [Troubleshooting](troubleshooting.md)
+- [Directives](directives.md)
 
 <!-- END TOC -->
 
