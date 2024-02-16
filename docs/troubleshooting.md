@@ -9,12 +9,14 @@ Table of contents:
 
 MDLCode will activate automatically if it detects a Moodle instance as a root of one of the VSCode Workspace folders.
 
-MDLCode **will not activate** if Moodle is **not a root folder**, for example, if you open a parent folder
-that contains both Moodle instance and moodledata folder. If this is something you would like to do,
-consider creating a [Multi-root workspace](https://code.visualstudio.com/docs/editor/workspaces) where
-Moodle instance and moodledata folder are separate roots.
+MDLCode **will not automatically activate** if Moodle is **not a root folder**, for example, if you open a parent folder
+that contains both Moodle instance and moodledata folder. In this case, MDLCode will ask you if you would like
+to activate it or not. If you accidentally clicked "No" and want to undo it, you can change the value of
+`mdlcode.detectInSubfolders` in your **Workspace** settings. If you want to automatically activate MDLCode for
+a particular subfoler (i.e. 'moodle') in any workspace, you can add it to you **User** settings.
 
-If you have a multi-root workspace and you opened several Moodle instances, MDLCode will activate
+
+If you have a multi-root workspace and you opened several Moodle instances (or you have moodle in multiple subfolers), MDLCode will activate
 **only for the first Moodle instance**.
 
 Once MDLCode is activated, it will add a Moodle icon to the Side Bar. It will also start full index

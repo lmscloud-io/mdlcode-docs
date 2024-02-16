@@ -35,10 +35,5 @@ Additional topics:
 <!-- END TOC -->
 
 <p align="center">
-<br>
-<a href="https://marketplace.visualstudio.com/items?itemName=LMSCloud.mdlcode"><img src="https://raw.githubusercontent.com/lmscloud-io/mdlcode-docs/main/docs/media/presentation.png" width="400"></a><br>
-</p>
-
-<p align="center">
 <a href="https://marketplace.visualstudio.com/items?itemName=LMSCloud.mdlcode" target="_blank"><small>Find MDLCode on Visual Studio Code Marketplace</small></a><span class="external-link-icon"></span>
 </p>

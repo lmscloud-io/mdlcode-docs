@@ -35,7 +35,8 @@ which means that all entities will be highlighted with the dark orange color:
 
 
 Overwrite decorations style for `default` (any entity) or for a specific entity types (`string`, `dbTable`, `jsModule`,
-`capability`,  `formElement`, `callback`, `webservice`, `behatStep`, `template`):
+`capability`,  `formElement`, `callback`, `webservice`, `behatStep`, `template`,
+`behatParamSelector`):
 
 ```json
 {
