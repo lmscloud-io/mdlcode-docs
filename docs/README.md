@@ -28,7 +28,7 @@ Learn how MDLCode helps you to work with:
 
 Additional topics:
 - [Boilerplate and docblock](boilerplate.md)
-- [MDLCode settings](configuration.md)
+- [MDLCode settings](settings.md)
 - [Troubleshooting](troubleshooting.md)
 - [Directives](directives.md)
 
