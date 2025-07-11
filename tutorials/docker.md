@@ -2,6 +2,8 @@
 2024-04-20
 > Configure MDLCode to run tests in docker with quick links above each test in the VSCode editor
 
+[![Run Moodle tests in docker, configure quick links in VSCode](https://img.youtube.com/vi/c8I5Lsk8dzA/0.jpg)](https://www.youtube.com/watch?v=c8I5Lsk8dzA)
+
 ## Setup
 
 ### 1. Install moodle-docker

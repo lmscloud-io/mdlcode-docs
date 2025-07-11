@@ -8,22 +8,22 @@ Default value:
     "mdlcode.features": {
         "rununittest.codelens": {
             "label": "Run test",
-            "script": "{{php}} admin/tool/phpunit/cli/util.php --run --filter='/::{{method}}$/' {{path}}"
+            "script": "{{php}} {{public}}admin/tool/phpunit/cli/util.php --run --filter='/::{{method}}$/' {{path}}"
         },
         "rununittests.codelens": {
             "label": "Run all tests",
-            "script": "{{php}} admin/tool/phpunit/cli/util.php --run {{path}}"
+            "script": "{{php}} {{public}}admin/tool/phpunit/cli/util.php --run {{path}}"
         },
         "executetask.codelens": {
             "label": "Execute task",
-            "script": "{{cliprefix}} {{php}} admin/cli/scheduled_task.php --execute={{class}}"
+            "script": "{{cliprefix}} {{php}} {{public}}admin/cli/scheduled_task.php --execute={{class}}"
         },
         "runbehatscenario.codelens": {
-          "script": "admin/tool/behat/cli/run.php --feature=\"{{fspath}}:{{line}}\"",
+          "script": "{{public}}admin/tool/behat/cli/run.php --feature=\"{{fspath}}:{{line}}\"",
           "label": "Run scenario"
         },
         "runbehatfeature.codelens": {
-          "script": "admin/tool/behat/cli/run.php --feature=\"{{fspath}}\"",
+          "script": "{{public}}admin/tool/behat/cli/run.php --feature=\"{{fspath}}\"",
           "label": "Run scenario"
         }
     }
@@ -73,6 +73,7 @@ Available placeholders:
 - `{{php}}` - PHP Path (from MDLCode settings, or by default `php`)
 - `{{dirroot}}` - Moodle root directory
 - `{{cliprefix}}` - Prefix for CLI command when executed as www user (from MDLCode setting `mdlcode.cli.prefix`)
+- `{{public}}` - For Moodle 5.1+ - the public directory prefix (e.g. `public/`), for older versions - empty string.
 
 All placeholders are replaced with escaped values (i.e. backslashes and quotes are escaped).
 

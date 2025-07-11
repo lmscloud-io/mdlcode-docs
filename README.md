@@ -24,4 +24,8 @@ VSCode extension that helps during the development of Moodle plugins.
 
 This is just one instance of how MDLCode can assist you.
 
-For a complete list of features, refer to the [MDLCode documentation](https://mdlcode.dev/docs).
+For a complete list of features, refer to the [MDLCode documentation](https://mdlcode.dev/docs) or watch these short tutorials:
+
+<p align="center"><a href="https://mdlcode.dev/tutorials/navigation"><img src="https://mdlcode.dev/images/tutorials/cover/navigation.png" width="411" width="201"></a></p>
+
+<p align="center"><a href="https://mdlcode.dev/tutorials/writing"><img src="https://mdlcode.dev/images/tutorials/cover/writing.png" width="411" width="201"></a></p>
